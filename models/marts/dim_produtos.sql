@@ -38,7 +38,22 @@ with
 
     , joined_tabelas as (
         select
-            *
+            stg_produtos.id_produto
+            , stg_produtos.id_fornecedor
+            , stg_produtos.id_categoria
+            , stg_produtos.nome_produto
+            , stg_produtos.quantidades_por_un
+            , stg_produtos.preco_un
+            , stg_produtos.un_estoque
+            , stg_produtos.un_ordem
+            , stg_produtos.nivel_abastecimento
+            , stg_produtos.is_descondinuado
+
+            , stg_categorias.nome_categoria
+
+            , stg_fornecedores.nome_fornecedor
+            , stg_fornecedores.pais_fornecedor
+
         from stg_produtos
         left join stg_categorias on
             stg_produtos.id_categoria = stg_categorias.id_categoria
