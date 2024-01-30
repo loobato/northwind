@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Dimensão de produtos da empresa. Uma linha por produto, com informações de categorias e fornecedores
+    columns:
+      - name: id_produto
+        description: Chave primária dos produtos
+        tests:
+          - unique
+          - not_null
+          
+      - name: id_fornecedor
+        description: Chave primária dos fornecedores    
+
+      - name: id_categoria
+        description: Chave primária das categorias
+
+      - name: nome_produto
+        description: TDB
+
+      - name: quantidades_por_un
+        description: TDB
+
+      - name: preco_un
+        description: TDB
+
+      - name: un_estoque
+        description: TDB
+
+      - name: un_ordem
+        description: TDB
+
+      - name: nivel_abastecimento
+        description: TDB
+
+      - name: is_descondinuado
+        description: TDB
+
+      - name: nome_categoria
+        description: TDB
+
+      - name: nome_fornecedor
+        description: TDB
+
+      - name: pais_fornecedor
+        description: TDB
+
