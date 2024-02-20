@@ -25,4 +25,8 @@ sources:
           tests:
             - unique
             - not_null
-        
+    
+    - name: orders
+    - name: order_details
+    - name: employees
+    

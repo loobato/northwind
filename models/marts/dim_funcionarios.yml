@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    description: Dimensão de funcionários da empresa. Relação de funcionários por gerente e dados sobre os colaboradores
+    columns:
+      - name: id_funcionario
+        description: Chave primária dos funcionarios
+        tests:
+          - unique
+          - not_null

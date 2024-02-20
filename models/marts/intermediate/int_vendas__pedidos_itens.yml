@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_vendas__pedidos_itens
+    description: Intermediaria com relação 1-n entre as ordens e dos produtos
+    columns:
+      - name: sk_pedido_item
+        description: Chave surrogate da tabela pedidos e itens
+        tests:
+          - unique
+          - not_null
