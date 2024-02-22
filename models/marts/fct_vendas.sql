@@ -9,6 +9,11 @@ with
         from {{ ref('dim_funcionarios') }}
     )
 
+    , dim_clientes as (
+        select *
+        from {{ ref('dim_clientes') }}
+    )
+
     , int_vendas as (
         select *
         from {{ ref('int_vendas__pedidos_itens') }}
